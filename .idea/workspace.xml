@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4a594fa2-7bff-458c-ab10-865d0afd0d91" name="Default Changelist" comment="" />
+    <list default="true" id="4a594fa2-7bff-458c-ab10-865d0afd0d91" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Boat.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/Boat.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Citizenship.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/Citizenship.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hack.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/Hack.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nerd-Rage.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/Nerd-Rage.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nuka-Cola.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/Nuka-Cola.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agility.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/agility.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,7 +28,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1n0T4yJuU9FululIAjiHi9zFyU7" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -37,6 +50,10 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\monst\PhpstormProjects\memory" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\monst\PhpstormProjects\memory\image" />
+      <recent name="C:\Users\monst\PhpstormProjects\memory" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -51,7 +68,7 @@
       <workItem from="1610613150760" duration="2000" />
       <workItem from="1610618682833" duration="36000" />
       <workItem from="1610618775193" duration="1003000" />
-      <workItem from="1610621373983" duration="2963000" />
+      <workItem from="1610621373983" duration="3604000" />
     </task>
     <servers />
   </component>

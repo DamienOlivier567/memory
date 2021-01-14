@@ -127,7 +127,7 @@ function startGame() {
         // Ajouter <img> à <li>
         liTag.appendChild(addImage);
         // Set the img src path with the shuffled deck
-        addImage.setAttribute("src", "https://github.com/FoxyStoat/memory-game/blob/master/assets/img/" + shuffledDeck[i] + "?raw=true");
+        addImage.setAttribute("src", "image" + shuffledDeck[i] + "?raw=true");
         // Add an alt tag to the image
         // Ajoute une balise alt à l'image
         addImage.setAttribute("alt", "image of vault boy from fallout");
