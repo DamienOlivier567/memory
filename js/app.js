@@ -1,23 +1,22 @@
 // Array of Deck of Card Images
-
 // Tableau de jeux d'images de cartes
 let deckCards = [
-    "agility.png",
-    "agility.png",
-    "Boat.png",
-    "Boat.png",
-    "Citizenship.png",
-    "Citizenship.png",
-    "Hack.png",
-    "Hack.png",
-    "Nerd-Rage.png",
-    "Nerd-Rage.png",
-    "Robotics.png",
-    "Robotics.png",
-    "Shock.png",
-    "Shock.png",
-    "Nuka-Cola.png",
-    "Nuka-Cola.png"
+    "./img/agility.png",
+    "./img/agility.png",
+    "./img/Boat.png",
+    "./img/Boat.png",
+    "./img/Citizenship.png",
+    "./img/Citizenship.png",
+    "./img/Hack.png",
+    "./img/Hack.png",
+    "./img/Nerd-Rage.png",
+    "./img/Nerd-Rage.png",
+    "./img/robotic.png",
+    "./img/robotic.png",
+    "./img/Shock_Value.png",
+    "./img/Shock_Value.png",
+    "./img/Nuka-Cola.png",
+    "./img/Nuka-Cola.png"
 ];
 
 // Global Arrays
@@ -80,7 +79,7 @@ let seconds = 0;
 let timeStart = false;
 
 // Shuffle function
-// Fonction Shuffle
+// Fonction Shuffle (Melange)
 function shuffle(array) {
     let currentIndex = array.length, temporaryValue, randomIndex;
 
@@ -93,15 +92,16 @@ function shuffle(array) {
     }
     return array;
 }
+/*
+Star Game: Shuffle the deck, create <li> tags and <img>
+tags and append to the deck <ul> with the new shuffled content
+ */
 
 /*
-Start Game: Shuffle the deck, create <li> tags and <img>
-tags and append to the deck <ul> with the new shuffled content
-*/
-/*
 Démarrer le jeu: mélangez le jeu, créez des balises <li> et <img>
-balises et ajouter au deck <ul> avec le nouveau contenu mélangé
+balises et ajouter au deck <ul> avec le nouveau contenu melangé
 */
+
 function startGame() {
     // Invoke shuffle function and store in variable
     // Invoque la fonction shuffle et stocke dans la variable
@@ -121,16 +121,15 @@ function startGame() {
 
         // Create the <img> tags
         // Créer les balises <img>
-        const addImage = document.createElement("IMG");
+        let addImage = document.createElement("IMG");
 
         // Append <img> to <li>
         // Ajouter <img> à <li>
         liTag.appendChild(addImage);
-        // Set the img src path with the shuffled deck
-        addImage.setAttribute("src", "image" + shuffledDeck[i] + "?raw=true");
-        // Add an alt tag to the image
-        // Ajoute une balise alt à l'image
-        addImage.setAttribute("alt", "image of vault boy from fallout");
+
+        // Set the img src path with the shuffledDeck
+        // Prendre les images avec shuffledDeck
+        addImage.src = shuffledDeck[i];
 
         // Update the new <li> to the deck <ul>
         // Mettre à jour le nouveau <li> vers le deck <ul>
@@ -144,10 +143,12 @@ startGame();
 Remove all child nodes from the deck <li> tags and
 <img> tags.  To be called in set everything function only
 */
+
 /*
-Supprimez tous les nœuds enfants des balises <li> du deck et
-Balises <img>. Pour être appelé dans la fonction set tout uniquement
-*/
+Supprimez tous les noeuds enfants des balises <li> du deck et
+Balises <img>. Pour être appelé dans la function set tout uniquement
+ */
+
 function removeCard() {
     // As long as <ul> deck has a child node, remove it
     // Tant que le deck <ul> a un nœud enfant, supprimez-le
@@ -165,8 +166,9 @@ on the first card click
 /*
 Mettez à jour le minuteur dans le HTML pendant des minutes et des secondes
 Cette fonction timer () est appelée dans l'écouteur d'événements
-sur la première carte, cliquez
+sur la première carte clique
 */
+
 function timer() {
     // Update the count every 1 second
     // Mettre à jour le décompte toutes les 1 seconde
@@ -178,7 +180,7 @@ function timer() {
         }
         // Update the timer in HTML with the time it takes the user to play the game
         // Mettre à jour le minuteur en HTML avec le temps nécessaire à l'utilisateur pour jouer au jeu
-        timeCounter.innerHTML = "<i class='fa fa-hourglass-start'></i>" + " Timer: " + minutes + " Mins " + seconds + " Secs" ;
+        timeCounter.innerHTML = "<i class='fa fa-hourglass-start'></i>" + " Temps: " + minutes + " Mins " + seconds + " Secs" ;
     }, 1000);
 }
 
@@ -189,21 +191,23 @@ all 16 cards, total of 8 pairs
 
 /*
 Arrêtez le chronomètre une fois que l'utilisateur a correspondu
-les 16 cartes, 8 paires au total
+les 16 cartes 8 paires au total
 */
+
 function stopTime() {
     clearInterval(time);
 }
 
 /*
 Reset all global variables and the content of HTML elements
-timer, stars, moves, and the moves and timer inner HTML
+timer, stars moves and the moves and timer inner HTML
 */
 
 /*
-Réinitialiser toutes les variables globales et le contenu des éléments HTML
-minuterie, étoiles, mouvements et mouvements et minuterie HTML interne
+Réinitialiser toutes les variables globales et le contenu des eéléments HTML
+minuterie étoiles mouvements et minuterie HTML interne
 */
+
 function resetEverything() {
     // Stop time, reset the minutes and seconds update the time inner HTML
     // Arrêter l'heure, réinitialiser les minutes et les secondes mettre à jour l'heure HTML interne
@@ -220,7 +224,7 @@ function resetEverything() {
     // Reset moves count and reset its inner HTML
     // Réinitialise le nombre de mouvements et réinitialise son code HTML interne
     moves = 0;
-    movesCount.innerHTML = 0;
+    movesCount.innerHTML = '0';
     // Clear both arrays that hold the opened and matched cards
     // Efface les deux tableaux contenant les cartes ouvertes et correspondantes
     matched = [];
@@ -238,6 +242,7 @@ comparison for every two cards compared add one to the count
 Incrémentez le compteur de coups. Être appelé à chaque
 comparaison pour deux cartes comparées ajouter une au nombre
 */
+
 function movesCounter() {
     // Update the html for the moves counter
     // Mettre à jour le html pour le compteur de coups
@@ -258,6 +263,7 @@ Mettez à jour le nombre d'étoiles. En fonction du nombre de
 déplace l'utilisateur termine le jeu, les étoiles diminuent
 avec le plus de mouvements que l'utilisateur prend.
 */
+
 function starRating() {
     if (moves === 14) {
         // First element child is the <i> within the <li>
@@ -278,6 +284,7 @@ Compare two cards to see if they match or not
 /*
 Comparez deux cartes pour voir si elles correspondent ou non
 */
+
 function compareTwo() {
     // When there are 2 cards in the opened array
     // Lorsqu'il y a 2 cartes dans le tableau ouvert
@@ -291,12 +298,10 @@ function compareTwo() {
         // If matched call match()
         // Si l'appel correspond à match ()
         match();
-        // console.log("It's a Match!");
     } else if (opened.length === 2 && opened[0].src !== opened[1].src) {
         // If No match call noMatch()
         // Si aucune correspondance n'appelle noMatch ()
         noMatch();
-        // console.log("NO Match!");
     }
 }
 
@@ -309,6 +314,7 @@ apply class of match
 Si les deux cartes correspondent, gardez les cartes ouvertes et
 appliquer la classe de correspondance
 */
+
 function match() {
     /* Access the two cards in opened array and add
     the class of match to the imgages parent: the <li> tag
@@ -317,10 +323,11 @@ function match() {
     /* Accédez aux deux cartes du tableau ouvert et ajoutez
     la classe de correspondance avec le parent imgages: la balise <li>
     */
+
     setTimeout(function() {
         opened[0].parentElement.classList.add("match");
         opened[1].parentElement.classList.add("match");
-        // Push the matched cards to the matched array
+        // Push the matched crads to the matched array
         // Poussez les cartes correspondantes vers le tableau correspondant
         matched.push(...opened);
         // Allow for further mouse clicks on cards
@@ -345,11 +352,13 @@ from the opened array and flip the cards back over by
 removing the flip class.
 */
 
+
 /*
 Si les deux cartes ne correspondent pas, retirez les cartes
 du tableau ouvert et retournez les cartes en
 suppression de la classe flip.
 */
+
 function noMatch() {
     /* After 700 miliseconds the two cards open will have
     the class of flip removed from the images parent element <li>*/
@@ -375,18 +384,19 @@ function noMatch() {
 }
 
 /*
-Get stats on the time, how many moves, and star rating
+Get stats on the time how many moves and star rating
 for the end game and update the modal with these stats
-*/
+ */
 
 /*
-Obtenez des statistiques sur le temps, le nombre de coups et le nombre d'étoiles
+Obtenez des statistiques sur le temps le nombre de coups et le nombre d'etoiles
 pour la fin du jeu et mettez à jour le modal avec ces statistiques
-*/
+ */
+
 function AddStats() {
     // Access the modal content div
     // Accéder à la div de contenu modal
-    const stats = document.querySelector(".modal-content");
+    let stats = document.querySelector(".modal-content");
     // Create three different paragraphs
     // Créer trois paragraphes différents
     for (let i = 1; i <= 3; i++) {
@@ -405,9 +415,9 @@ function AddStats() {
     let p = stats.querySelectorAll("p.stats");
     // Set the new <p> to have the content of stats (time, moves and star rating)
     // Définit le nouveau <p> pour avoir le contenu des statistiques (temps, coups et classement par étoiles)
-    p[0].innerHTML = "Time to complete: " + minutes + " Minutes and " + seconds + " Seconds";
-    p[1].innerHTML = "Moves Taken: " + moves;
-    p[2].innerHTML = "Your Star Rating is: " + starCount + " out of 3";
+    p[0].innerHTML = "Temps pour terminer: " + minutes + " Minutes  " + seconds + " Seconds";
+    p[1].innerHTML = "Mouvements effectués: " + moves;
+    p[2].innerHTML = "Votre classement par étoiles est: " + starCount + " sur 3";
 }
 
 /*
@@ -417,10 +427,12 @@ Display the modal on winning the game
 /*
 Afficher le modal en gagnant la partie
 */
+
 function displayModal() {
-// Access the modal <span> element (x) that closes the modal
-// Accède à l'élément modal <span> (x) qui ferme le modal
+    // Access the modal <span> element (x) that closes the modal
+    // Accède à l'élément modal <span> (x) qui ferme le modal
     const modalClose = document.getElementsByClassName("close")[0];
+
     // When the game is won set modal to display block to show it
     // Lorsque le jeu est gagné, définissez modal pour afficher le bloc pour le montrer
     modal.style.display= "block";
@@ -430,8 +442,8 @@ function displayModal() {
     modalClose.onclick = function() {
         modal.style.display = "none";
     };
-// When the user clicks anywhere outside of the modal, close it
-// Lorsque l'utilisateur clique n'importe où en dehors du modal, fermez-le
+    // When the user clicks anywhere outside of the modal, close it
+    // Lorsque l'utilisateur clique n'importe où en dehors du modal, fermez-le
     window.onclick = function(event) {
         if (event.target === modal) {
             modal.style.display = "none";
@@ -450,6 +462,7 @@ Vérifiez la longueur du tableau correspondant et s'il y a
 sont 8 paires 16 cartes en tout, alors le jeu est gagné.
     Arrêtez le minuteur, mettez à jour le modal avec des statistiques et affichez le modal
 */
+
 function winGame() {
     if (matched.length === 16) {
         stopTime();
@@ -473,6 +486,7 @@ call flipCard()
 Écouteur d'événement si vous cliquez sur une carte <li>
 appeler flipCard ()
 */
+
 deck.addEventListener("click", function(evt) {
     if (evt.target.nodeName === "LI") {
         // To console if I was clicking the correct element
@@ -486,7 +500,7 @@ deck.addEventListener("click", function(evt) {
             timeStart = true;
             timer();
         }
-        // Call flipCard() function
+        // Call flipCard () function
         // Appel de la fonction flipCard ()
         flipCard();
     }
@@ -501,7 +515,6 @@ deck.addEventListener("click", function(evt) {
         // Appel de la fonction addToOpened ()
         addToOpened();
     }
-
     //Add the fliped cards to the empty array of opened
     // Ajoute les cartes retournées au tableau vide de ouvert
     function addToOpened() {
@@ -512,6 +525,7 @@ deck.addEventListener("click", function(evt) {
         /* Si le tableau ouvert a zéro ou un autre img, poussez un autre
         img dans le tableau afin que nous puissions comparer ces deux pour être mis en correspondance
         */
+
         if (opened.length === 0 || opened.length === 1) {
             // Push that img to opened array
             // Poussez cette image dans le tableau ouvert

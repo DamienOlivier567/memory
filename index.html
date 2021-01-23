@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Memory</title>
-    <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <div class="container">
@@ -14,7 +13,7 @@
     </header>
 
     <section class="score-panel">
-        <h3>Score Panel</h3>
+        <h3>Score</h3>
         <ul id="star-rating" class="star-rating">
             <li class="star"><i class="fa fa-star"></i></li>
             <li class="star"><i class="fa fa-star"></i></li>
@@ -22,23 +21,22 @@
         </ul>
         <span class="moves-counter">0</span> Moves
         <div class="timer-container">
-            <span class="timer"><i class="fa fa-hourglass-start"></i> Timer: 00:00</span>
+            <span class="timer"><i class="fa fa-hourglass-start"></i> Temps: 00:00</span>
         </div>
-        <div class="reset">
-            <button class="btn reset-btn">Reset <i class="fa fa-repeat"></i></button>
-        </div>
+
     </section>
 
     <!-- Modal -->
     <section class="win-game-modal">
         <div id="modal" class="modal">
             <!-- Modal content -->
+            <!-- Contenu Modal-->
             <div class="modal-content">
                 <span class="close">&times;</span>
-                <h2>Congratulations!</h2>
-                <p>You have won the game and found all 8 pairs of cards.</p>
-                <img class="modal-img" src="win.png">
-                <button class="btn play-again-btn">Play Again?</button>
+                <h2>FELICITATION!</h2>
+                <p>Vous avez trouvez les 8 pairs.</p>
+                <img class="modal-img" src="img/win.png">
+                <button class="btn play-again-btn">Rejouer?</button>
             </div>
         </div>
     </section>
@@ -46,7 +44,6 @@
     <ul class="deck"></ul>
 </div>
 
-
-<script src="app.js"></script>
+<script src="js/app.js"></script>
 </body>
 </html>

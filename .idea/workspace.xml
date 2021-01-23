@@ -1,15 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4a594fa2-7bff-458c-ab10-865d0afd0d91" name="Default Changelist" comment="">
+    <list default="true" id="4a594fa2-7bff-458c-ab10-865d0afd0d91" name="Default Changelist" comment="Memory">
+      <change afterPath="$PROJECT_DIR$/Maquette.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/Shock_Value.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/robotic.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Boat.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/Boat.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Citizenship.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/Citizenship.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hack.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/Hack.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Nerd-Rage.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/Nerd-Rage.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Nuka-Cola.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/Nuka-Cola.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agility.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/agility.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/Boat.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/Boat.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/Citizenship.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/Citizenship.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/Hack.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/Hack.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/Nerd-Rage.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/Nerd-Rage.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/Nuka-Cola.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/Nuka-Cola.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/agility.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/agility.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/win.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/win.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,9 +28,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JavaScript File" />
         <option value="HTML File" />
         <option value="CSS File" />
-        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -51,8 +57,11 @@
       <recent name="C:\Users\monst\PhpstormProjects\memory" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\monst\PhpstormProjects\memory\image" />
       <recent name="C:\Users\monst\PhpstormProjects\memory" />
+      <recent name="C:\Users\monst\PhpstormProjects\memory\img" />
+      <recent name="C:\Users\monst\PhpstormProjects\memory\css" />
+      <recent name="C:\Users\monst\PhpstormProjects\memory\js" />
+      <recent name="C:\Users\monst\PhpstormProjects\memory\falout" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -68,11 +77,50 @@
       <workItem from="1610613150760" duration="2000" />
       <workItem from="1610618682833" duration="36000" />
       <workItem from="1610618775193" duration="1003000" />
-      <workItem from="1610621373983" duration="3604000" />
+      <workItem from="1610621373983" duration="3895000" />
+      <workItem from="1610627751097" duration="13000" />
+      <workItem from="1610627936310" duration="187000" />
+      <workItem from="1610712904253" duration="8889000" />
+      <workItem from="1610805481501" duration="2498000" />
+      <workItem from="1610920647390" duration="712000" />
+      <workItem from="1610957885026" duration="1266000" />
+      <workItem from="1610978780607" duration="92000" />
+      <workItem from="1611053138315" duration="257000" />
+      <workItem from="1611056770378" duration="6285000" />
+      <workItem from="1611129898418" duration="921000" />
+      <workItem from="1611132359199" duration="14077000" />
+      <workItem from="1611302394828" duration="5135000" />
+      <workItem from="1611309543420" duration="5294000" />
+      <workItem from="1611336333044" duration="1355000" />
+      <workItem from="1611407736044" duration="204000" />
     </task>
+    <task id="LOCAL-00001" summary="Memory">
+      <created>1610627425788</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1610627425788</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Memory" />
+    <option name="LAST_COMMIT_MESSAGE" value="Memory" />
   </component>
 </project>
